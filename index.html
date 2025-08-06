@@ -11,178 +11,395 @@
   />
 </head>
 <body>
-  <!-- 상단 프로필 -->
-  <header>
-    <div class="profile-container">
-      <img src="images/profile.png" alt="김미소 프로필 이미지" class="profile-img" />
-      <div class="profile-info">
-        <h1>김미소</h1>
-        <p>동아대학교 AI학과 졸업 예정 (2026.02)</p>
-        <p><i class="fas fa-birthday-cake"></i> 2003.07.20</p>
-        <p><i class="fas fa-phone"></i> 010-5369-1276</p>
-        <p><i class="fas fa-envelope"></i> misokim030720@naver.com</p>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="profile">
+        <img src="images/profile.png" alt="김미소" class="sidebar-img" id="profileImage" />
+        <h2 class="sidebar-name">김미소</h2>
       </div>
-    </div>
-  </header>
+      <ul class="menu">
+        <li data-submenu="submenu-about"><i class="fas fa-user"></i> 소개</li>
+        <li data-submenu="submenu-career"><i class="fas fa-briefcase"></i> 경력</li>
+        <li data-submenu="submenu-skills"><i class="fas fa-code"></i> 기술</li>
+        <li data-submenu="submenu-future"><i class="fas fa-bullseye"></i> 목표</li>
+        <li data-submenu="submenu-swink"><i class="fas fa-building"></i> 스윙크</li>
+      </ul>
+    </aside>
 
-  <!-- 메인 메뉴 -->
-  <nav class="main-menu">
-    <ul>
-      <li data-submenu="submenu-about">소개</li>
-      <li data-submenu="submenu-career">경력</li>
-      <li data-submenu="submenu-skills">기술 & 관심분야</li>
-      <li data-submenu="submenu-future">향후 목표</li>
-      <li data-submenu="submenu-swink">나는 스윙크에서</li>
-    </ul>
-  </nav>
+    <!-- Submenu -->
+    <aside class="submenu-panel">
+      <div id="submenu-about" class="submenu">
+        <button class="sub-tab" data-tab="keywords">주요 키워드</button>
+        <button class="sub-tab" data-tab="strengths">장점 & 단점</button>
+        <button class="sub-tab" data-tab="motivation">지원동기</button>
+      </div>
+      <div id="submenu-career" class="submenu">
+        <button class="sub-tab" data-tab="career">수상경력 및 프로젝트</button>
+      </div>
+      <div id="submenu-skills" class="submenu">
+        <button class="sub-tab" data-tab="skills">주력/기타 기술</button>
+        <button class="sub-tab" data-tab="dev">희망 개발</button>
+      </div>
+      <div id="submenu-future" class="submenu">
+        <button class="sub-tab" data-tab="future">향후 목표</button>
+      </div>
+      <div id="submenu-swink" class="submenu">
+        <button class="sub-tab" data-tab="swink">나는 스윙크에서</button>
+      </div>
+    </aside>
 
-  <!-- 세부 메뉴 -->
-  <div class="submenu-container">
-    <div id="submenu-about" class="submenu">
-      <span class="sub-tab" data-tab="keywords">주요 키워드</span>
-      <span class="sub-tab" data-tab="strengths">장점 & 단점</span>
-      <span class="sub-tab" data-tab="motivation">지원동기</span>
-    </div>
-    <div id="submenu-career" class="submenu">
-      <span class="sub-tab" data-tab="career">수상 경력 및 프로젝트 경험</span>
-    </div>
-    <div id="submenu-skills" class="submenu">
-      <span class="sub-tab" data-tab="skills">주력 기술과 기타 기술</span>
-      <span class="sub-tab" data-tab="dev">희망하는 개발</span>
-    </div>
-    <div id="submenu-future" class="submenu">
-      <span class="sub-tab" data-tab="future">향후 목표</span>
-    </div>
-    <div id="submenu-swink" class="submenu">
-      <span class="sub-tab" data-tab="swink">나는 스윙크에서</span>
-    </div>
+    <!-- Main Content -->
+    <main class="content">
+      <section id="keywords" class="tab-content">
+      <h1 class="section-title">주요 키워드</h1>
+      <div class="keyword-content">
+        <p>
+          저를 소개하는 주요 키워드는 <span class="highlight-keyword">'성실, 화합'</span> 입니다.
+        </p>
+
+        <p>
+          저의 강력한 장점은 <span class="highlight-keyword">성실함</span> 입니다. 저는 고등학교 3학년 말부터 알바를 해왔습니다. 단기, 장기 알바 모두 해봤습니다. 자신있게 말씀드릴 수 있는 건 일했던 곳에서 항상 저를 좋게 봐주셨습니다.
+          이유를 생각해보자면 <span class="highlight-keyword">성실함</span>이 가장 큰 것 같습니다. 일에 대해 알려주시면 어떤 일이든 최대한 빨리 익혀 도움이 될 수 있도록 알바가 끝난 개인 시간에도 메모를 보며 열심히 보고 외웠습니다. 
+          그래서 모든 직장에서 '적응이 빠르다'는 말을 종종 들었습니다.
+        </p>
+
+        <p>
+          그리고 저는 중요하게 생각하는 점이 두 개가 더 있다면 <span class="highlight-keyword">약속</span>과 <span class="highlight-keyword">화합</span>이라 생각합니다. 
+          시간 약속은 철저히 지키며, 잡혀있는 스케줄 변경 또한 만들지 않도록 항상 노력합니다. 
+          그리고 직장 내의 <span class="highlight-keyword">화합</span>이 정말 중요하다고 생각합니다. 일이 힘든 것보다 사람들과 부딪히는 일이 더 큰 어려움이라 생각합니다. 
+          좋은 부딪힘이 아니라 불필요한 감정 싸움이나 대화 단절 등이 가장 큰 어려움 입니다. 
+          그래서 저는 어느 직장을 가더라도 <span class="highlight-keyword">화합</span>을 중요시하며 노력했습니다.
+          일이 생기면 가장 먼저 나서고, 다른 직원들이 어려움을 겪고 있으면 함께 처리하여 일의 능률을 높였습니다.
+        </p>
+
+        <p>
+          현 직장에서도 높은 업무 비중을 맡고 있으며, '덕분에 일이 쉬워졌다'는 말을 자주 들었습니다.
+        </p>
+
+        <p class="highlight-text">
+          저는 일을 알려주시면 뭐든 <strong>성실히</strong> 임해 빠르게 적응하고, 만족스러운 결과를 가져올 수 있습니다.
+        </p>
+      </div>
+      </section>
+
+      <section id="strengths" class="tab-content">
+        <h1 class="section-title">장점 & 단점</h1>
+        <div class="strengths-container">
+            <!-- 장점 -->
+            <h2 class="strength-title">장점</h2>
+            <p>
+                저의 가장 큰 장점은 
+                <span class="highlight-keyword">성실함</span>과 
+                <span class="highlight-keyword">책임감</span>입니다. 
+                맡은 일을 <span class="highlight-keyword">만족스럽게 완수</span>하려는 
+                끈기를 가지고 있으며, 다양한 프로젝트에서 
+                <span class="highlight-keyword">팀원들과 원활하게 소통</span>하며 
+                프로젝트를 성공적으로 마무리해 왔습니다. 
+                새로운 업무나 기술을 맡게 되었을 때도 
+                <span class="highlight-keyword">책임감을 가지고 빠르게 학습</span>하여 
+                결과물을 완성하는 데 집중합니다.
+            </p>
+
+            <!-- 단점 -->
+            <h2 class="weakness-title">단점</h2>
+            <p>
+                업무를 분배할 때 <span class="highlight-keyword">혼자 해결할 수 있는 일들을 스스로 처리</span>하려는 
+                경향이 있어 때때로 <span class="highlight-keyword">많은 비중의 일을 맡게 되는 경우</span>가 있었습니다. 
+                그러나 이를 개선하기 위해 최근에는 
+                <span class="highlight-keyword">팀원들과 더 적극적으로 소통</span>하며 
+                <span class="highlight-keyword">업무를 균형 있게 분담</span>하고, 
+                효율적으로 협업하는 방식을 익혀가고 있습니다. 
+                이러한 경험을 통해 
+                <span class="highlight-keyword">협업 능력</span>과 
+                <span class="highlight-keyword">문제 해결 능력</span>을 더욱 강화할 수 있었습니다.
+            </p>
+        </div>
+      </section>
+
+      <section id="motivation" class="tab-content">
+        <h1 class="section-title">지원동기</h1>
+        <div class="motivation-container">
+          <p>
+            비록 길지 않은 기간이지만, 이번 인턴십을 통해 
+            실제 현장에서 실무 역량을 체계적으로 쌓고자 지원하게 되었습니다. 
+            학부 과정 동안 여러 프로젝트를 경험하며 개발 역량을 키워왔지만, 
+            <span class="highlight-keyword">실제 기업 환경에서 진행되는 프로젝트</span>는 
+            학교 수업에서 경험할 수 없는 <span class="highlight-keyword">다양한 도전</span>과 
+            <span class="highlight-keyword">문제 해결 과정</span>을 포함하고 있다고 생각합니다.
+          </p>
+
+          <p>
+            특히 최근 진행한 프로젝트들을 통해 프론트엔드 개발과 UI/UX 디자인의 중요성을 깊이 깨달았습니다. 
+            단순히 기능을 구현하는 것을 넘어, 
+            <span class="highlight-keyword">사용자가 편리하게 서비스를 이용할 수 있도록 화면을 구성</span>하고, 
+            <span class="highlight-keyword">직관적이면서도 완성도 높은 프로그램 디자인</span>을 만드는 과정이 얼마나 중요한지 직접 체감했습니다. 
+            이러한 경험을 바탕으로 저는 
+            <span class="highlight-keyword">SWINK에서 현업에서 활용되는 프로그램 디자인</span>과 
+            <span class="highlight-keyword">사용자 경험 설계 방법</span>을 배우고 싶습니다.
+          </p>
+
+          <p>
+            SWINK에서의 인턴십을 통해 <span class="highlight-text">현업에서 요구되는 기술과 협업 방식</span>을 배우고, 
+            <span class="highlight-text">전문성을 갖춘 개발자</span>로 성장할 수 있는 기반을 마련하고 싶습니다. 
+            더 나아가 이번 경험을 통해 웹과 앱 디자인 역량을 한층 강화하고, 
+            <span class="highlight-text">피그마(Figma)</span> 등 다양한 협업 디자인 도구를 능숙하게 다루어 
+            <strong>향후에도 실무에 바로 적용할 수 있는 실력</strong>을 갖추고자 합니다.
+          </p>
+        </div>
+      </section>
+
+      <section id="career" class="tab-content">
+        <h2 class="section-title">수상 경력 및 프로젝트 경험</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="year">2024.03~2024.08</span>
+            <p>낙동강 조류 도감 앱 – 프론트엔드 담당</p>
+            <div class="tech-box">Kotlin, Android Studio</div>
+          </div>
+          <div class="timeline-item">
+            <span class="year">2024.08</span>
+            <p>SW 공유 포럼 – 기술상, 인기상</p>
+            <div class="tech-box">Kotlin, Android Studio</div>
+          </div>
+          <div class="timeline-item">
+            <span class="year">2025~</span>
+            <p>복지카드 통합 앱 – 프론트엔드 담당</p>
+            <div class="tech-box">React-Native</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="tab-content">
+        <h1 class="section-title">주력 기술</h1>
+        <div class="skills-container">
+            <!-- React Native -->
+            <div class="skill-item">
+            <img src="images/react-native-icon.png" alt="React-Native" class="skill-icon" />
+            <span class="skill-name">React-Native</span>
+            <span class="skill-level">이용 레벨: 중상</span>
+        </div>
+        <!-- Python -->
+        <div class="skill-item">
+            <img src="images/python-icon.png" alt="Python" class="skill-icon" />
+            <span class="skill-name">Python</span>
+            <span class="skill-level">이용 레벨: 상</span>
+            </div>
+        </div>
+
+        <h1 class="section-title">기타 기술</h1>
+        <div class="skills-container">
+            <!-- Kotlin -->
+            <div class="skill-item">
+            <img src="images/kotlin-icon.png" alt="Kotlin" class="skill-icon" />
+            <span class="skill-name">Kotlin</span>
+            <span class="skill-level">이용 레벨: 중하</span>
+            </div>
+            <!-- HTML -->
+            <div class="skill-item">
+            <img src="images/html-icon.png" alt="HTML" class="skill-icon" />
+            <span class="skill-name">HTML</span>
+            <span class="skill-level">이용 레벨: 중상</span>
+            </div>
+            <!-- Vue -->
+            <div class="skill-item">
+            <img src="images/vue-icon.png" alt="Vue" class="skill-icon" />
+            <span class="skill-name">Vue</span>
+            <span class="skill-level">이용 레벨: 중하</span>
+            </div>
+            <!-- JavaScript -->
+            <div class="skill-item">
+            <img src="images/javascript-icon.png" alt="JavaScript" class="skill-icon" />
+            <span class="skill-name">JavaScript</span>
+            <span class="skill-level">이용 레벨: 중</span>
+            </div>
+        </div>
+      </section>
+
+      <section id="dev" class="tab-content">
+        <h1 class="section-title">희망하는 개발</h1>
+  
+        <!-- 1순위 -->
+        <div class="priority-container">
+            <h2 class="priority-title">1순위</h2>
+            <h3 class="priority-main">스윙크에서 다양한 교육 디지털 콘텐츠처럼 움직이는 게임 콘텐츠의 디자인 개발</h3>
+            <div class="course-box">
+              <p><strong>관련된 학교 수업</strong></p>
+              <ul>
+                <li>객체지향프로그래밍 (간단한 공룡게임에 여러 요소 추가하기)</li>
+                <li>컴퓨터 그래픽스 (3D, 다양한 실패 조건을 세워 마우스로 장애물 피하기 게임)</li>
+              </ul>
+            </div>
+        </div>
+
+        <!-- 2순위 -->
+        <div class="priority-container">
+            <h2 class="priority-title">2순위</h2>
+            <h3 class="priority-main">피그마를 이용하여 반응형 웹 UI/UX 디자인 개발</h3>
+            <div class="course-box">
+              <p><strong>관련된 학교 수업</strong></p>
+              <ul>
+                <li>웹 프로그래밍 (나의 소개 페이지 만들기)</li>
+                <li>AI시스템 설계 및 개발 (팀 프로젝트를 진행하여 첫 어플 개발)</li>
+                <li>실증적 AI개발 프로젝트Ⅰ (팀 프로젝트를 진행하여 웹 개발)</li>
+              </ul>
+            </div>
+        </div>
+
+        <!-- 3순위 -->
+        <div class="priority-container">
+            <h2 class="priority-title">3순위</h2>
+            <h3 class="priority-main">언리얼 엔진 기반 게임 개발</h3>
+            <p class="priority-desc">게임 개발에 관련해서는 무지한 편이지만 FPS 게임을 좋아하는 유저로서 언리얼 엔진 기반 게임 개발에 대해 자세히 배워보고 알아보고 싶습니다.</p>
+            <div class="course-box">
+              <p><strong>관련된 학교 수업</strong></p>
+              <ul>
+                <li>컴퓨터 그래픽스 (3D 그래픽)</li>
+                <li>컴퓨터 비전 (OpenGL)</li>
+              </ul>
+            </div>
+        </div>
+      </section>
+
+      <section id="future" class="tab-content">
+        <h1 class="section-title">향후 목표</h1>
+        <div class="future-container">
+          <p>
+            향후 저는 
+            <span class="highlight-keyword">웹과 앱 디자인 분야에서 전문성을 갖춘 개발자</span>로 
+            성장하는 것을 목표로 하고 있습니다. 다양한 프로젝트를 진행하며 
+            단순한 기능 구현을 넘어, 
+            <span class="highlight-keyword">사용자가 보다 편리하고 직관적으로 서비스를 이용할 수 있도록 만드는 디자인의 중요성</span>을 
+            깊이 깨달았습니다. 이러한 경험을 통해 
+            <span class="highlight-keyword">단순한 개발 역량뿐 아니라, 사용자의 시선에서 서비스를 바라보고 완성도 높은 화면과 인터페이스를 구현하는 것</span>이 
+            진정한 가치라고 생각하게 되었습니다.
+          </p>
+
+          <p>
+            이를 위해 저는 
+            <span class="highlight-keyword">협업과 시각적 설계에 강점이 있는 <span class="highlight-text">피그마(Figma)</span></span>를 더욱 능숙하게 다루어, 
+            팀원들과 원활하게 소통하며 효율적인 디자인 프로세스를 구축할 수 있는 역량을 강화하고자 합니다. 
+            나아가 <span class="highlight-keyword">최신 UI/UX 트렌드를 반영</span>해, 
+            <span class="highlight-keyword">직관적이면서도 심미적인 디자인</span>을 만들어낼 수 있는 감각을 키우고 싶습니다.
+          </p>
+
+          <p>
+            <strong>이번 인턴십을 통해 
+            <span class="highlight-keyword">현업에서 실제로 사용되는 디자인 워크플로우</span>와 
+            <span class="highlight-keyword">실무 환경</span>을 경험하며, 
+            <strong>프로젝트 기획 → 화면 설계 → 개발 및 개선 과정까지의 전반적인 흐름</strong>을 체득하겠습니다.
+            이를 기반으로 실무에 즉시 적용할 수 있는 역량을 갖춘 
+            <span class="highlight-keyword">웹·앱 디자이너이자 프론트엔드 개발자</span>로 성장하여, 
+            <span class="highlight-text">사용자 경험을 최우선으로 하는 혁신적인 서비스</span>를 
+            만들어 내는 전문가로 발전해 나가고자 합니다.</strong>
+          </p>
+        </div>
+      </section>
+
+      <section id="swink" class="tab-content">
+        <h1 class="section-title">나는 스윙크에서</h1>
+        <div class="swink-container">
+            <p>
+              저는 이 회사에 입사하게 된다면 
+              <span class="highlight-keyword">교육용 게임 콘텐츠</span>를 통해 
+              <span class="highlight-keyword">학습 효과와 재미</span>를 동시에 잡을 수 있는 사람으로 성장하고 싶습니다. 
+              교육용 게임에서는 단순히 지식을 전달하는 것을 넘어, 
+              사용자가 흥미를 느끼고 자발적으로 학습을 이어가도록 만드는 
+              <span class="highlight-keyword">스토리텔링과 난이도 조절</span>이 무엇보다 중요하다고 생각합니다.
+            </p>
+
+            <p>
+              이를 위해 저는 <span class="highlight-keyword">스토리와 어울리는 캐릭터, 아이템, 배경 디자인</span>을 통해 
+              <span class="highlight-keyword">몰입감 있는 학습 경험</span>을 제공할 수 있도록 기여하고 싶습니다. 
+              또한 학습자가 별도의 설명 없이도 자연스럽게 게임을 진행할 수 있도록 
+              <span class="highlight-keyword">직관적이고 풍부한 인터페이스</span>를 설계하여 
+              <span class="highlight-keyword">사용자 친화적인 게임 환경</span>을 만드는 사람이 되고 싶습니다.
+            </p>
+
+            <p>
+              나아가, 다양한 프로젝트와 학습 경험을 통해 쌓은 
+              <span class="highlight-keyword">디자인 감각과 개발 역량</span>을 기반으로, 
+              팀과 협업하며 <span class="highlight-keyword">교육적 가치와 재미를 조화롭게 결합</span>하는 
+              <strong>게임 콘텐츠 개발자</strong>로 성장하겠습니다.
+            </p>
+        </div>
+      </section>
+    </main>
   </div>
 
-  <!-- 콘텐츠 -->
-  <main>
-    <section id="keywords" class="tab-content">
-      <h2 class="section-title">주요 키워드: <span>"성실, 처음, 미숙, 화합"</span></h2>
-      <p>저는 <strong>실무 경험이 현저히 부족</strong>합니다. 그래서 수상 경력이나 완성된 프로젝트가 많이 없어 자기소개서 내용도 많이 <strong>미숙</strong>합니다. 그래도 저의 강력한 장점은 <strong>성실함</strong> 입니다. 저는 고등학교 3학년 말부터 해오던 어느 알바에서든 항상 저를 좋게 봐주셨습니다. 
-이유를 생각해보자면 성실함이 가장 큰 것 같습니다. 일에 대해 알려주시면 어떤 일이든 최대한 빨리 익혀 도움이 될 수 있도록 열심히 노력했습니다. 
-그래서 모든 직장에서 초반에 <strong>'미소는 적응이 빨라서 좋아. 다른 사람들 대부분 2주는 걸렸는데 되게 빨리 외웠네'</strong>라는 말들을 종종 들었습니다.</p> 
-
-<p>그리고 저는 중요하게 생각하는 점이 두 개가 더 있다면 <strong>약속, 화합</strong>이라 생각합니다. 
-좋은 부딪힘이 아니라 불필요한 감정 싸움이나 대화 단절 등이 일에 있어 가장 큰 어려움 입니다. 그래서 저는 어느 직장을 가더라도 화합을 중요시하며 노력했습니다.</p>
-
-<p><strong>현 직장에서도 비록 주 2일 출근이지만 주 5일 출근하는 정직원 담당 일을 제게 전적으로 믿고 맡기십니다.</strong> 점장님께 <strong>'유일하게 미소가 내 요구를 완벽히 충족시켜서 너한테 맡긴다. 미소는 믿고 맡긴다'</strong>고 말씀 많이 해주시고, 같이 일하는 직원분들도 <strong>'미소님 출근하는 날을 기다리게 된다. 미소님 덕분에 일 속도가 빨라져서 너무 좋다.'</strong>라고 많이 말씀해주십니다. </p>
-    <p><h2>저는 그래서 강력히 어필하고 싶은 점이 처음이라 많이 미숙해 보이더라도 알려주시면 정말 뭐든 성실히 임해 빠르게 적응하고, 만족스러운 결과를 가져오도록 누구보다 노력할 것을 자신있게 말씀드릴 수 있습니다.</h2></p>
-
-    </section>
-
-    <section id="strengths" class="tab-content">
-      <h1 class="section-title">장점 & 단점</h1>
-      <p><h2>장점</h2>제 가장 큰 장점은 <strong>성실함과 책임감</strong>입니다. 맡은 일은 만족스럽게 완수하려는 끈기를 가지고 있으며, 다양한 프로젝트에서 팀원들과도 열심히 <strong>소통</strong>하여 성공적으로 마무리 했었습니다.</p>
-      <p><h2>단점</h2>역시 <strong>실무 경험이 부족</strong>하다는 점입니다. 이를 보완하기 위해 최근 여러 프로젝트에 참여하며 실전 감각을 키우고 있으며, 이번 인턴쉽을 통해 실제 현장에서의 업무를 경험하며 부족한 부분을 빠르게 보완하고 성장하고 싶습니다.</p>
-    </section>
-
-    <section id="motivation" class="tab-content">
-      <h2 class="section-title">지원동기</h2>
-      <p>비록 길지 않은 기간이지만 실제 현장에서 실무 역량을 키우고자 합니다. 다양한 프로젝트를 진행하면서 프론트엔드 개발과 UI/UX 디자인에 대한 흥미가 생겼으며, <strong>사용자 친화적인 화면 구성과 효율적인 프로그램 디자인에 대한 이해</strong>를 더욱 깊게 쌓고 싶습니다.<h3> SWINK에서 실무 경혐을 쌓으며 전문성을 갖춘 개발자로 성장하고 싶습니다.</h3></p>
-    </section>
-
-    <section id="career" class="tab-content">
-      <h2 class="section-title">수상 경력 및 프로젝트 경험</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <span class="year">2024.03~2024.08</span>
-          <strong><p>낙동강 조류 도감 어플리케이션 – 프론트엔드 개발 담당</p>
-          <div class="tech-box">사용 언어: Flutter</div></strong>
-        </div>
-        <div class="timeline-item">
-          <span class="year">2024.08</span>
-          <strong><p>제 1회 전국대학 소프트웨어 성과 공유 포럼 <br> 기술상, 인기상</p>
-          <div class="tech-box">사용 언어: Flutter</div></strong>
-        </div>
-        <div class="timeline-item">
-          <span class="year">2025~</span>
-          <strong><p>복지카드 통합 어플리케이션 – 프론트엔드 개발 담당</p>
-          <div class="tech-box">사용 언어: React-native</div></strong>
-        </div>
+  <!-- 프로필 카드 모달 -->
+  <div id="profileModal" class="modal">
+      <div class="modal-content profile-card">
+        <span class="close">&times;</span>
+        <p><i class="fas fa-user"></i> <strong>이름:</strong> 김미소</p>
+        <p><i class="fas fa-birthday-cake"></i> <strong>생년월일:</strong> 2003.07.20</p>
+        <p><i class="fas fa-phone"></i> <strong>전화번호:</strong> 010-5369-1276</p>
+        <p><i class="fas fa-envelope"></i> <strong>이메일:</strong> misokim030720@naver.com</p>
+        <p><i class="fas fa-graduation-cap"></i> <strong>학력:</strong> 동아대학교 AI학과 졸업 예정(2026.02)</p>
       </div>
-    </section>
+  </div>
 
-    <section id="skills" class="tab-content">
-      <h1 class="section-title">주력 기술</h1>
-            <p><h2>React-Native, Python</h2></p>
-                <strong><p>React-Native 이용 레벨: '중'</p> <p>Python 이용 레벨: '중상' .</p></strong>
-            
-
-      <h1 class="section-title">기타 기술</h1>
-      <p><h2>Flutter, Vue, HTML, C++, JavaScript</h2></p>
-          <strong><p> Flutter 이용 레벨: '하'</p> <p>Vue 이용 레벨: '하'</p> <p>Html 이용 레벨: '중상'</p> <p>C++의 이용 레벨: '중하'</p> <p>JavaScript 이용 레벨: '중'</p></strong>
-    </section>
-
-    <section id="dev" class="tab-content">
-      <h2 class="section-title">희망하는 개발</h2>
-      <p> <h1 class="section-title">1위</h1>
-        <h2> 스윙크에서 다양한 교육 디지털 콘텐츠처럼 움직이는 게임 콘텐츠의 디자인 개발</strong>을 해보고 싶습니다.</h2> 
-        관련된 학교 수업으로 <strong>객체지향프로그래밍(간단한 공룡게임에 여러 요소 추가하기), 컴퓨터 그래픽스(3D, 다양한 실패 조건을 세워 마우스로 장애물 피하기 게임)</strong> 등을 배웠습니다.
-         <h1 class="section-title">2위</h1>
-         <h2> 피그마를 이용하여 반응형 웹 UI/UX 디자인 개발을 배워보고 싶습니다.</h2>
-         관련된 학교 수업으로 <strong>웹 프로그래밍(나의 소개 페이지 만들기), AI시스템 설계 및 개발(수업에서 배우기보단 팀 프로젝트를 진행하여 첫 어플 개발), 실증적 AI개발 프로젝트Ⅰ(이 수업 역시 팀 프로젝트를 진행하여 웹 개발)</strong> 등이 있었습니다.  
-         <h1 class="section-title">3위</h1>
-         <h2>게임 개발입니다. </h2>
-         게임 개발에 관련해서는 무지한 편이지만 FPS 게임을 좋아하는 유저로서 언리얼 엔진 기반 게임 개발에 대해 자세히 배워보고 알아보고 싶습니다. 관련된 수업은 <strong>컴퓨터 그래픽스(3D 그래픽), 컴퓨터 비전(OpenGL)</strong> 등을 배웠습니다.</p>
-    </section>
-
-    <section id="future" class="tab-content">
-      <h2 class="section-title">향후 목표</h2>
-      향후 저는 웹과 앱 디자인 분야에서 전문성을 갖춘 개발자로 성장하는 것을 목표로 하고 있습니다. <p>최근 다양한 프로젝트를 진행하면서 단순히 기능을 구현하는 것뿐만 아니라, <strong>사용자가 더욱 편리하고 직관적으로 서비스를 이용할 수 있도록 만드는 디자인의 중요성</strong>을 깊이 느꼈습니다.</p> <p>이를 위해 특히 협업과 시각적 설계에 강점이 있는 <strong>피그마(Figma)</strong>를 더욱 능숙하게 다루는 것을 목표로 삼고 있습니다. 피그마를 활용해 효율적으로 팀과 협업하고, UI/UX 전반에 걸쳐 더 높은 완성도를 갖춘 디자인을 제작할 수 있도록 실력을 끌어올리고자 합니다.</p> <h2>인턴쉽 경험을 통해 현업에서 실제로 사용되는 디자인 프로세스와 트렌드를 배우고, 이를 기반으로 실무에 바로 적용할 수 있는 역량을 갖춘 웹·앱 디자이너 겸 프론트엔드 개발자로 성장해 나가는 것이 목표입니다.</h2>
-    </section>
-
-    <section id="swink" class="tab-content">
-      <h2 class="section-title">나는 스윙크에서</h2>
-      저는 이 회사에 입사하게 된다면 교육용 게임 콘텐츠를 통해 <strong>학습 효과와 재미를 동시에 잡을 수 있는 사람으로 성장</strong>하고 싶습니다. 교육용 게임에서는 단순히 지식을 전달하는 것을 넘어, 사용자가 흥미를 느끼고 자발적으로 학습을 이어가도록 만드는 스토리텔링과 난이도 조절이 무엇보다 중요하다고 생각합니다.
-
-<h3>이를 위해 저는 스토리와 어울리는 캐릭터, 아이템, 배경 디자인을 통해 몰입감 있는 학습 경험을 제공할 수 있도록 기여하고 싶습니다. 또한 학습자가 별도의 설명 없이도 자연스럽게 게임을 진행할 수 있도록 직관적이면서도 풍부한 인터페이스를 설계하여 사용자 친화적인 게임 환경을 만드는 사람이 되고 싶습니다.</h3>
-
-<h4>나아가, 다양한 프로젝트와 학습 경험을 통해 쌓은 디자인 감각과 개발 역량을 기반으로, 팀과 협업하며 교육적 가치와 재미를 조화롭게 결합하는 게임 콘텐츠 개발자로 성장하겠습니다</h4>.
-    </section>
-  </main>
-
+  <!-- Footer -->
   <footer>
     <div class="folder-icons">
-      <div class="folder" data-modal="modal1"><i class="fas fa-folder"></i></div>
-      <div class="folder" data-modal="modal2"><i class="fas fa-folder"></i></div>
-      <div class="folder" data-modal="modal3"><i class="fas fa-folder"></i></div>
+      <div class="folder" data-modal="modal1">
+        <i class="fas fa-folder"></i>
+        <span class="folder-name">낙동강 조류 도감 어플리케이션</span>
+      </div>
+      <div class="folder" data-modal="modal2">
+        <i class="fas fa-folder"></i>
+        <span class="folder-name">데모 영상(낙동강 조류 도감 어플)</span>
+      </div>
+      <div class="folder" data-modal="modal3">
+        <i class="fas fa-folder"></i>
+        <span class="folder-name">복지카드 통합 앱</span>
+      </div>
     </div>
     <p>© 2025 김미소. All Rights Reserved.</p>
   </footer>
 
-  <!-- 모달들 -->
+  <!-- Folder Modals -->
   <div id="modal1" class="modal">
-      <div class="modal-content">
-          <span class="close">&times;</span>
-          <!-- 이미지 3개 썸네일 -->
-          <div class="gallery">
-              <img src="images/img1.jpg" alt="img1">
-              <img src="images/img2.jpg" alt="img2">
-              <img src="images/img3.jpg" alt="img3">
-          </div>
+      <div class="modal-content folder-modal">
+        <span class="close">&times;</span>
+        <div class="gallery">
+          <img src="images/img1.jpg" alt="img1" class="gallery-img" />
+          <img src="images/img2.jpg" alt="img2" class="gallery-img" />
+          <img src="images/img3.jpg" alt="img3" class="gallery-img" />
+          <img src="images/img4.jpg" alt="img4" class="gallery-img" />
+        </div>
       </div>
   </div>
+
   <div id="modal2" class="modal">
-      <div class="modal-content">
-          <span class="close">&times;</span>
-          <!-- 동영상 -->
-          <video controls>
-              <source src="videos/video.mp4" type="video/mp4">
-              지원하지 않는 브라우저입니다.
-          </video>
+      <div class="modal-content folder-modal">
+        <span class="close">&times;</span>
+        <video controls>
+          <source src="videos/video.mp4" type="video/mp4" />
+          브라우저가 비디오를 지원하지 않습니다.
+        </video>
       </div>
   </div>
+
   <div id="modal3" class="modal">
-      <div class="modal-content">
-          <span class="close">&times;</span>
-          <!-- 이미지/영상 추가 -->
-          <p>추가 콘텐츠</p>
+      <div class="modal-content folder-modal">
+        <span class="close">&times;</span>
+        <div class="gallery">
+          <img src="images/img5.jpg" alt="img5" class="gallery-img" />
+          <img src="images/img6.jpg" alt="img6" class="gallery-img" />
+          <img src="images/img7.jpg" alt="img7" class="gallery-img" />
+        </div>
       </div>
   </div>
+
+  <!-- 개별 이미지 확대 모달 -->
+  <div id="imageModal" class="modal">
+      <div class="modal-content image-modal">
+        <span class="close">&times;</span>
+        <img id="enlargedImage" src="" alt="확대 이미지" />
+      </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
